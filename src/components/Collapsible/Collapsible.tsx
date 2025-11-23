@@ -1,6 +1,36 @@
 import React from "react";
 import "./Collapsible.scss";
+import arrow from "/images/arrow.png";
 
-export default function Collapsible() {
-  return <div>Collapsible</div>;
+export default function Collapsible({
+  children,
+  title,
+  clickImg = false,
+}: {
+  children: React.ReactNode;
+  title: string;
+  clickImg?: boolean;
+}) {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggleCollapsible = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <div className={`collapsible ${!isOpen ? "hidden" : ""}`}>
+      <h1
+        className={clickImg ? "" : "clickable"}
+        onClick={clickImg ? undefined : toggleCollapsible}
+      >
+        {title}
+        <img
+          className={clickImg ? "clickable" : ""}
+          onClick={clickImg ? toggleCollapsible : undefined}
+          src={arrow}
+          alt="arrow"
+        />
+      </h1>
+      <p>{children}</p>
+    </div>
+  );
 }
