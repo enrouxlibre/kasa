@@ -1,17 +1,15 @@
 import React from "react";
 import "./TitleImage.scss";
 
-interface TitleImageProps {
-  image: string;
-  title?: string;
-  alt?: string;
-}
-
 export default function TitleImage({
   image,
   title,
   alt = "Title image",
-}: TitleImageProps) {
+}: {
+  image: string;
+  title?: string;
+  alt?: string;
+}) {
   return (
     <div className="title-image">
       <img className={title ? "darker" : ""} src={image} alt={alt} />

@@ -18,7 +18,7 @@ export default function Collapsible({
   };
   return (
     <div className={`collapsible ${!isOpen ? "hidden" : ""}`}>
-      <h1
+      <h2
         className={clickImg ? "" : "clickable"}
         onClick={clickImg ? undefined : toggleCollapsible}
       >
@@ -29,7 +29,7 @@ export default function Collapsible({
           src={arrow}
           alt="arrow"
         />
-      </h1>
+      </h2>
       <p>{children}</p>
     </div>
   );

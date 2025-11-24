@@ -17,7 +17,11 @@ createRoot(document.getElementById("root")!).render(
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/housing/:id" element={<Housing />} />
+          <Route
+            path="/housing/:id"
+            errorElement={<Error404 />}
+            element={<Housing />}
+          />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </main>

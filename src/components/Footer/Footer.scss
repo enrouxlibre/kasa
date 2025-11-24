@@ -8,9 +8,8 @@ footer {
   gap: 30px;
   padding: 65px 0 30px 0;
   width: 100%;
-}
-@media screen and (max-width: 600px) {
-  footer {
+
+  @media screen and (max-width: 600px) {
     font-size: 12px;
     gap: 5px;
     span {
