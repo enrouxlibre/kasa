@@ -7,7 +7,7 @@ export default function TitleImage({
   alt = "Title image",
 }: {
   image: string;
-  title?: string;
+  title?: string | React.ReactElement;
   alt?: string;
 }) {
   return (

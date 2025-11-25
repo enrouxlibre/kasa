@@ -7,4 +7,10 @@
   margin: 50px 0;
   border-radius: 25px;
   background-color: #f6f6f6;
+  @media screen and (max-width: 600px) {
+    margin: 20px 0;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
 }

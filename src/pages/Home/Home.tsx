@@ -20,7 +20,12 @@ export default function Home() {
       <TitleImage
         image={cliffImage}
         alt="Home"
-        title="Chez vous, partout et ailleurs"
+        title={
+          <>
+            Chez vous,
+            <wbr /> partout et ailleurs
+          </>
+        }
       />
       <ul className="thumbnails-list">{logement_list}</ul>
     </>

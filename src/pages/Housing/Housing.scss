@@ -2,7 +2,6 @@
   h1 {
     color: var(--primary-color);
     font-size: 36px;
-    line-height: 1.5em;
     font-weight: 500;
     @media screen and (max-width: 600px) {
       font-size: 18px;
@@ -58,10 +57,11 @@
   }
   .housing-host {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
     gap: 10px;
     .housing-host-name {
+      text-align: right;
       color: var(--primary-color);
       font-size: 18px;
       width: min-content;
@@ -74,6 +74,10 @@
       height: 65px;
       border-radius: 50%;
       object-fit: cover;
+      @media screen and (max-width: 600px) {
+        width: 32px;
+        height: 32px;
+      }
     }
   }
   .housing-collapsibles {

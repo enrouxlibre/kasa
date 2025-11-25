@@ -4,6 +4,10 @@
   height: 340px;
   border-radius: 10px;
   overflow: hidden;
+  @media screen and (max-width: 600px) {
+    height: 255px;
+    width: 335px;
+  }
 
   img {
     width: 100%;
