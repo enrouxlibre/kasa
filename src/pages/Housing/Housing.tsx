@@ -63,9 +63,7 @@ export default function Housing() {
         </div>
       </div>
       <div className="housing-collapsibles">
-        <Collapsible title="Description">
-          <p>{logement.description}</p>
-        </Collapsible>
+        <Collapsible title="Description">{logement.description}</Collapsible>
         <Collapsible title="Équipements">
           <ul>
             {logement.equipments.map((equipment, index) => (

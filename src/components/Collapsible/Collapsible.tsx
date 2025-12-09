@@ -30,7 +30,7 @@ export default function Collapsible({
           alt="arrow"
         />
       </h2>
-      <p>{children}</p>
+      <div>{children}</div>
     </div>
   );
 }

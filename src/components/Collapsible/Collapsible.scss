@@ -22,7 +22,7 @@
       padding: 10px;
     }
   }
-  p {
+  div {
     overflow: hidden;
     will-change: max-height, padding, opacity;
     transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -34,7 +34,7 @@
       padding: 10px;
     }
   }
-  &.hidden p {
+  &.hidden div {
     max-height: 0;
     padding: 0 20px;
     opacity: 0;

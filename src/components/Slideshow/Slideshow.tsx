@@ -29,13 +29,23 @@ export default function Slideshow({ images }: { images: string[] }) {
             className="slideshow__button slideshow__button--prev"
             onClick={goToPrevious}
           >
-            &#10094;
+            <img
+              className="previous navigation-arrow"
+              src="/images/big-arrow-right.png"
+              srcSet="/images/small-arrow-right.png 600w, /images/big-arrow-right.png 1200w"
+              alt="previous"
+            />
           </button>
           <button
             className="slideshow__button slideshow__button--next"
             onClick={goToNext}
           >
-            &#10095;
+            <img
+              className="navigation-arrow"
+              src="/images/big-arrow-right.png"
+              srcSet="/images/small-arrow-right.png 600w, /images/big-arrow-right.png 1200w"
+              alt="next"
+            />
           </button>
           <div className="slideshow__counter">
             {currentIndex + 1} / {images.length}
