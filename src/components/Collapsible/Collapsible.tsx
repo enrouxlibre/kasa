@@ -22,7 +22,7 @@ export default function Collapsible({
         className={clickImg ? "" : "clickable"}
         onClick={clickImg ? undefined : toggleCollapsible}
       >
-        {title}
+        <span>{title}</span>
         <img
           className={clickImg ? "clickable" : ""}
           onClick={clickImg ? toggleCollapsible : undefined}
