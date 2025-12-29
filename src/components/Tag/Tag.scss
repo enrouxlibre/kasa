@@ -7,6 +7,14 @@
   border-radius: 10px;
   background-color: var(--primary-color);
   color: white;
-  padding: 0 10px;
+  padding: 5px 10px;
   text-wrap: nowrap;
+  font-weight: bold;
+  min-width: 115px;
+  @media screen and (max-width: 600px) {
+    font-size: 10px;
+    min-width: 85px;
+    height: 18px;
+    border-radius: 5px;
+  }
 }

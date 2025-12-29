@@ -46,17 +46,9 @@ export default function Housing() {
           <div className="housing-rating">
             {[...Array(5)].map((_, index) => {
               if (index < parseInt(logement.rating)) {
-                return (
-                  <span className="housing-star" key={index}>
-                    ★
-                  </span>
-                );
+                return <img src="/images/star.svg" alt="star" />;
               } else {
-                return (
-                  <span className="housing-star grey" key={index}>
-                    ★
-                  </span>
-                );
+                return <img src="/images/star-grey.svg" alt="grey star" />;
               }
             })}
           </div>

@@ -6,7 +6,6 @@ import logements from "../../assets/logements.json";
 import Thumbnail from "../../components/Thumbnail/Thumbnail";
 
 export default function Home() {
-  console.log(logements);
   const logement_list = logements.map((logement) => (
     <li key={logement.id}>
       <a href={"/housing/" + logement.id}>

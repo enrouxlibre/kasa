@@ -7,32 +7,29 @@
       font-size: 18px;
     }
   }
+
   h2 {
     font-size: 18px;
   }
+
   ul {
     list-style-type: none;
   }
+
   .housing-location {
     font-size: 18px;
     @media screen and (max-width: 600px) {
       font-size: 14px;
     }
   }
+
   .housing-tags {
     display: flex;
     gap: 10px;
     margin-top: 20px;
     flex-wrap: wrap;
   }
-  .housing-star {
-    font-size: 24px;
-    padding: 0 5px;
-    color: var(--primary-color);
-    &.grey {
-      color: #e3e3e3;
-    }
-  }
+
   .housing-info {
     display: flex;
     justify-content: space-between;
@@ -43,6 +40,7 @@
       align-items: flex-start;
       gap: 15px;
     }
+
     .housing-info-two {
       display: flex;
       flex-direction: column;
@@ -55,11 +53,30 @@
       }
     }
   }
+
+  .housing-rating {
+    display: flex;
+    gap: 15px;
+    @media screen and (max-width: 600px) {
+      gap: 8px;
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+      @media screen and (max-width: 600px) {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
   .housing-host {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
+
     .housing-host-name {
       text-align: right;
       color: var(--primary-color);
@@ -69,6 +86,7 @@
         font-size: 12px;
       }
     }
+
     .housing-host-picture {
       width: 65x;
       height: 65px;
@@ -80,6 +98,7 @@
       }
     }
   }
+
   .housing-collapsibles {
     display: flex;
     gap: 75px;
