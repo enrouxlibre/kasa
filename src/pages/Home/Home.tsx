@@ -1,6 +1,5 @@
-import React from "react";
 import "./Home.scss";
-import cliffImage from "/images/cliff.png";
+import cliffImage from "@images/cliff.png";
 import TitleImage from "../../components/TitleImage/TitleImage";
 import logements from "../../assets/logements.json";
 import Thumbnail from "../../components/Thumbnail/Thumbnail";

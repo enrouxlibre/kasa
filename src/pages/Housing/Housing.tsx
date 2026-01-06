@@ -5,6 +5,7 @@ import logements from "../../assets/logements.json";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Collapsible from "../../components/Collapsible/Collapsible";
 import Tag from "../../components/Tag/Tag";
+import Stars from "../../components/Stars/Stars";
 
 export default function Housing() {
   const { id } = useParams();
@@ -44,13 +45,7 @@ export default function Housing() {
             />
           </div>
           <div className="housing-rating">
-            {[...Array(5)].map((_, index) => {
-              if (index < parseInt(logement.rating)) {
-                return <img src="/images/star.svg" alt="star" />;
-              } else {
-                return <img src="/images/star-grey.svg" alt="grey star" />;
-              }
-            })}
+            <Stars rating={parseInt(logement.rating)} />
           </div>
         </div>
       </div>

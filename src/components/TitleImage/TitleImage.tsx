@@ -1,4 +1,4 @@
-import React from "react";
+import { ReactElement } from "react";
 import "./TitleImage.scss";
 
 export default function TitleImage({
@@ -7,7 +7,7 @@ export default function TitleImage({
   alt = "Title image",
 }: {
   image: string;
-  title?: string | React.ReactElement;
+  title?: string | ReactElement;
   alt?: string;
 }) {
   return (

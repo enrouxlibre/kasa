@@ -1,7 +1,6 @@
-import React from "react";
 import "./Header.scss";
-import HeaderLogo from "/images/header_logo.png";
-import HeaderLogoSmall from "/images/header_logo_small.png";
+import HeaderLogo from "@images/header_logo.png";
+import HeaderLogoSmall from "@images/header_logo_small.png";
 import { useLocation } from "react-router";
 
 export default function Header() {

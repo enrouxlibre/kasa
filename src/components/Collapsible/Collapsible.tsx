@@ -1,6 +1,6 @@
-import React from "react";
+import { useState } from "react";
 import "./Collapsible.scss";
-import arrow from "/images/arrow.png";
+import arrow from "@images/arrow.png";
 
 export default function Collapsible({
   children,
@@ -11,7 +11,7 @@ export default function Collapsible({
   title: string;
   clickImg?: boolean;
 }) {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapsible = () => {
     setIsOpen(!isOpen);

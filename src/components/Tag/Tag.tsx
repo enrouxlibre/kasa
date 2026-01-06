@@ -1,6 +1,6 @@
-import React from "react";
+import { ReactNode } from "react";
 import "./Tag.scss";
 
-export default function Tag({ children }: { children: React.ReactNode }) {
+export default function Tag({ children }: { children: ReactNode }) {
   return <div className="tag">{children}</div>;
 }

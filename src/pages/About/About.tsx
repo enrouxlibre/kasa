@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.scss";
 import Collapsible from "../../components/Collapsible/Collapsible";
 import moutainsImage from "/images/mountains.png";
