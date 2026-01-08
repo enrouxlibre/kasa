@@ -5,7 +5,7 @@ import logements from "../../assets/logements.json";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Collapsible from "../../components/Collapsible/Collapsible";
 import Tag from "../../components/Tag/Tag";
-import Stars from "../../components/Stars/Stars";
+import Rating from "../../components/Rating/Rating";
 
 export default function Housing() {
   const { id } = useParams();
@@ -44,9 +44,7 @@ export default function Housing() {
               alt={logement.host.name}
             />
           </div>
-          <div className="housing-rating">
-            <Stars rating={parseInt(logement.rating)} />
-          </div>
+          <Rating rating={parseInt(logement.rating)} />
         </div>
       </div>
       <div className="housing-collapsibles">
