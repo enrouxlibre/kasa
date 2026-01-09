@@ -22,7 +22,13 @@
     height: 100%;
     display: block;
     position: absolute;
-    background: linear-gradient(180deg, #0a0a0a00 0%, #04040469 41%, #000000);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0),
+      rgba(10, 10, 10, 0),
+      rgba(4, 4, 4, 0.41),
+      rgba(0, 0, 0, 0.8)
+    );
   }
 
   h1 {
