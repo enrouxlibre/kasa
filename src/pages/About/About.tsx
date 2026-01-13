@@ -1,6 +1,6 @@
 import "./About.scss";
 import Collapsible from "../../components/Collapsible/Collapsible";
-import moutainsImage from "/images/mountains.png";
+import moutainsImage from "@images/mountains.png";
 import TitleImage from "../../components/TitleImage/TitleImage";
 
 export default function About() {
